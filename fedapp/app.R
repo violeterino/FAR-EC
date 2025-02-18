@@ -53,6 +53,7 @@ server <- function(input, output) {
                     high = 0.4
                 )
             )
+        colnames(fuzzy_BN) <- c("negative tone","neutral tone","positive tone")
         }
 
         #----------inflation expectation---------
@@ -163,7 +164,7 @@ server <- function(input, output) {
         }
 
 
-
+        colnames(fuzzy_inf_exp) <- c("low inflation expectations", "medium inflation expectations", "high inflation expectations")
         fuzzy_data <- cbind(fuzzy_BN,fuzzy_inf_exp)
         return(fuzzy_data)
 
@@ -178,7 +179,7 @@ server <- function(input, output) {
 
 
 
-        consSuffix <- paste0("inf_exp")
+        consSuffix <- paste0("inflation expectations")
         consIndices <- which(endsWith(colnames(dejta()), consSuffix))
 
 

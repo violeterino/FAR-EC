@@ -9,6 +9,7 @@ The project includes:
 **Data**
 
 This repository includes two time series downloaded from the FRED – Federal Reserve Bank of St. Louis website:
+
 **Consumer Price Index: Total All Items for the United States (original_data/CPALTT01USM659N.csv)**
 Series ID: CPALTT01USM659N
 Period: February 1997 – December 2023
@@ -26,6 +27,7 @@ Federal Reserve Bank of Cleveland, 1-Year Expected Inflation [EXPINF1YR], retrie
 This repository also includes time series of tone - a qualitative proxy for the sentiment of CB messages (original_data/data.xlsx)
 
 **Data processing**
+
 The script data_transform performs the following tasks:
 - loads the .csv and .xlsx data files
 - compute middle points of context for evolving context
@@ -33,5 +35,6 @@ The script data_transform performs the following tasks:
 This .rds file is then consumed by the Shiny app located in the app directory.
 
 **Shiny application**
+
 The Shiny application (app/app.R) enables interactive exploration of the method's results. It is available online here:
 🔗 [https://fiala.shinyapps.io/fedapp/]

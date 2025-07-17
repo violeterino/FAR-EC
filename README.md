@@ -34,6 +34,9 @@ Citation:
 
 Federal Reserve Bank of Cleveland, 1-Year Expected Inflation [EXPINF1YR], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/EXPINF1YR, July 10, 2025. 
 
+The data (CPALTT01USM659N, EXPINF1YR)  are used for non-commercial research purposes.
+The repository supports a scientific article and is not redistributing the data independently.
+
 This repository also includes time series of tone - a qualitative proxy for the sentiment of CB messages (original_data/data.xlsx)
 
 **Data processing**
@@ -50,3 +53,5 @@ This .rds file is then consumed by the Shiny app located in the app directory.
 
 The Shiny application (app/app.R) enables interactive exploration of the method's results. It is available online here:
 🔗 [https://fiala.shinyapps.io/fedapp/]
+
+
